@@ -8,7 +8,8 @@ public class HomeWork4 {
                 System.out.print(number + " ");
                 number-=2;
             }
-
+        }
+        System.out.println("**********");
             while (number>=1){
                 if (number%2!=1){
                     System.out.print(number+" ");
@@ -18,4 +19,3 @@ public class HomeWork4 {
             }
         }
 
-}
