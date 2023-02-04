@@ -4,15 +4,13 @@ public class Book {
     String subject;
     String name;
     int year;
-    Book(String bSubject,String bName,int bYear){
-        subject=bSubject;
-        name=bName;
-        year=bYear;
+    Book(String subject,String name){
+        this.subject=subject;
+        this.name=name;
     }
-    public Book(String bName,int bYear,String bSubject){
-        name=bName;
-        year=bYear;
-        subject=bSubject;
+    Book(String subject,String name,int year){
+        this(subject,name);
+        this.year=year;
     }
     void printInfo(){
         System.out.println(subject+" name "+name+" year "+year);
@@ -21,8 +19,6 @@ public class Book {
     public static void main(String[] args) {
         Book b=new Book("Story","Aligator",2018);
         b.printInfo();
-        Book b1=new Book("Poetry","Day",2020);
-        b1.printInfo();
     }
 
 
